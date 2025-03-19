@@ -1,0 +1,43 @@
+{
+  "name": "template-nodejs-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --require ./src/traces.js ./bin/www",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.4.1",
+    "@opentelemetry/auto-instrumentations-node": "^0.37.1",
+    "@opentelemetry/exporter-trace-otlp-grpc": "^0.40.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.40.0",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.40.0",
+    "@opentelemetry/instrumentation": "^0.40.0",
+    "@opentelemetry/resources": "^1.14.0",
+    "@opentelemetry/sdk-trace-node": "^1.14.0",
+    "@opentelemetry/semantic-conventions": "^1.14.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "jwt-decode": "^3.1.2",
+    "morgan": "~1.9.1",
+    "morgan-json": "^1.1.0",
+    "nconf": "github:indexzero/nconf",
+    "nconf-yaml": "^1.0.2",
+    "prom-client": "^14.2.0",
+    "winston": "^3.9.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text",
+      "json-summary",
+      "lcov"
+    ]
+  }
+}

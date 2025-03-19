@@ -1,0 +1,9 @@
+deploy/
+Dockerfile
+node_modules/
+README.md
+.git
+.gitignore
+LICENSE
+coverage/
+gitops-coverage.md
